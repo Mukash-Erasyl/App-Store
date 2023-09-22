@@ -1,0 +1,6 @@
+<div class="categorySort" (click)="setCategory()">Показать все....</div>
+<div class="sidenav" *ngFor="let a of categories">
+  <div class="eventBloc" (click)="setCategory(a.name || 'Одежда')">
+    <div class="categorySort">{{a.name}}</div>
+  </div>
+</div>

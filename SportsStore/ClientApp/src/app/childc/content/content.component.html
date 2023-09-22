@@ -1,0 +1,44 @@
+<div class="content"  >
+  <div class="headerText">
+    <h2>Товары</h2>
+  </div>
+  <!-- <div class="elementStonks">
+  </div> -->
+  <div class="elementStonks">
+
+  <div class="el" *ngFor="let a of products;index as i" >
+    <div class="settingAddItems" *ngIf="settingAddEventFlag && counter==i+1" #el1 >
+      <div class="settingEl" routerLink="/update" ><p (click)="selectProduct(a.id || 1)">Edit</p></div>
+      <div class="settingEl"><p (click)="deleteProduct(a.id || 1)" >Delete</p></div>
+      
+  </div>
+  <div class="settings" (click)="settingAddEvent(i+1)">...</div>
+    <div routerLink="/detail">
+    <div (click)="selectProduct(a.id || 1)">
+    <div class="stonkPic">
+      <img [src]="a.imgLinks" width="180" height="250"  alt="">
+    </div>
+    <div class="stonkInfo">
+    <div class="price">
+      {{a.price}} тг
+    </div>
+    <div class="nameStonk">
+      {{a.name}}
+    </div>
+    <div class="descStonk">
+      {{a.desc}}
+    </div>
+    <div class="aviability">
+      <div class="aviaTrue" *ngIf="a.availability">Есть на складе / {{a.count}}</div>
+      <div class="aviaFalse" *ngIf="!a.availability">В Наличии нет</div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+
+  </div>

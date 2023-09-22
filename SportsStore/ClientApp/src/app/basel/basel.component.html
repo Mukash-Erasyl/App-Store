@@ -1,0 +1,83 @@
+<div class="allContainer">
+
+    <div class="sidenav" *ngIf="sideFlag" >
+        <div class="sidenavClose" (click)="sideBarFunc()">
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545777.png" width="30" alt="">
+        </div>
+        <app-side-bar class="sideBarContent"></app-side-bar>
+      </div>
+
+    <div class="header">
+
+        <div class="highHeader headerEl">
+            <div class="lg highHeaderEl">
+                <div><img src="https://cdn-icons-png.flaticon.com/512/2115/2115307.png" width="20" alt=""></div>
+                <div>kz</div>
+            </div>
+            <div class="loc highHeaderEl">
+                <div><img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" width="20" alt=""></div>
+                <div>Алматы</div>
+            </div>
+            <div class="techSupport highHeaderEl">
+                <div><img src="https://cdn-icons-png.flaticon.com/512/4298/4298847.png" width="20" alt=""></div>
+                <div>Тех Поддержка</div>
+            </div>
+            
+        </div>
+        <div class="lowHeader headerEl">
+            <div class="category" (click)="sideBarFunc()">
+                <img src="https://cdn-icons-png.flaticon.com/512/4743/4743041.png" width="50px" alt="">
+            </div>
+            <div class="logo">
+                <div class="logoText">Jabai Store</div>
+                <div class="logoPic"><img src="https://cdn-icons-png.flaticon.com/512/1254/1254860.png" width="80" alt=""></div>
+            </div>
+            <div class="text-field">
+                <label class="text-field__label" for="search">Найти</label>
+                <div class="text-field__icon">
+                  <input class="text-field__input"  type="search" #search name="search" id="search" [placeholder]="LastSearching" [value]="">
+                  <span class="text-field__aicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" (click)="lastSearchFunc(search.value)" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" /></svg>
+                  </span>
+                </div>
+              </div>
+            <div class="addOptions">
+                <div class="adress">
+                    Адреса
+
+                </div>
+                <div class="login" (click)="enterExit()">
+
+                    <div class="enter" *ngIf="lFlag" >Выйти</div>
+                    <div class="exit"  *ngIf="!lFlag" >Войти</div>
+
+                </div>
+                <div class="basket">
+                    Корзина
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="content">
+        <app-content></app-content>
+
+
+    </div>
+
+    <div class="createProduct" routerLink="/create">
+        <img src="https://img.icons8.com/nolan/512/add.png" width="75" alt="">
+    </div>
+
+    <div class="footer">
+        <app-footer></app-footer>
+
+    </div>
+
+</div>
+
+
+

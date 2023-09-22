@@ -1,0 +1,62 @@
+.content {
+    color: aliceblue;
+}
+
+th, td {
+    padding:5px 30px;
+  }
+
+  th {
+    font-weight: 700;
+  }
+
+
+  td :hover {
+    color: aqua;
+  }
+
+.qrIconsEl img {
+  width: 30px;
+
+}
+
+.qrIconsEl {
+  margin-left: 10px;
+}
+
+
+
+.links{
+  display: flex;
+  
+}
+
+.qr {
+  margin-left: 75px;
+}
+
+.qrIcons {
+  display: flex;
+  margin-left: 24%;
+}
+
+.qrPic {
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px ;
+  background-color: aliceblue;
+  width: 140px;
+  margin-left: 12%;
+}
+
+.qrText {
+  font-size: 12px;
+}
+
+.qr div {
+  margin-bottom: 25px;
+}
+
+.policy{
+  text-align: center;
+
+}

@@ -1,0 +1,44 @@
+.sidenav .categorySort {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 7px;
+    color: black;
+    display: block;
+  }
+  
+  .sidenav .categorySort:hover {
+    color:cornflowerblue;
+    background-color:  #8860D0;
+    transition: .5s;
+    border-radius: 5px 5px 5px 5px ;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .categorySort {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 7px;
+    color: black;
+    display: block;
+  }
+
+  .categorySort:hover {
+
+    color:cornflowerblue;
+    background-color:  #8860D0;
+    transition: .5s;
+    border-radius: 5px 5px 5px 5px ;
+
+  }

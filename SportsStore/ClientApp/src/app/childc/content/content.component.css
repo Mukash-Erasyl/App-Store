@@ -1,0 +1,101 @@
+.tableContent {
+    
+    border-radius: 10px 10px 10px 10px ;
+}
+
+
+
+.elementStonks {
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.el {
+    width: 300px;
+}
+
+.headerText {
+    margin: 25px auto;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.stonkPic img{
+    border-radius: 10px 10px 10px 10px  ;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 700;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px auto;
+}
+
+.stonkInfo {
+
+    height: 75px;
+    width: 150;
+    
+    overflow-y: scroll;
+    
+}
+
+.nameStonk{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: .4;
+}
+
+.headerText {
+    font-weight: 500;
+    
+}
+
+.el:hover {
+    z-index: 1000;
+    transform:translate3d(15px , -20px ,15px);
+    transition: 1s;
+}
+
+.settings {
+    font-size: 21px;
+    margin: 10px auto;
+}
+
+.settingAddItems {
+    position: static;
+    top: 50px;
+    padding: 5px 3px;
+    border-radius: 10px 10px 10px 10px ;
+    background-color:aliceblue;
+    margin-top: -75px;
+    margin-bottom: 20px;
+    margin-left: -16px;
+    margin-right: -20px;
+
+}
+
+
+.settingEl {
+    padding: 3px;
+    margin-top: 3px;
+    color:black;
+    font-size: 12px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.settingEl p{
+    padding: 3px;
+    margin-top: 3px;
+    color:black;
+    font-size: 12px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+ }
+
+.settingEl p:hover {
+    color: blue;
+}

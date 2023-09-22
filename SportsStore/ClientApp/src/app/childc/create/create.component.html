@@ -1,0 +1,100 @@
+<div class="content">
+
+
+
+    <div class="header">
+        <div class="closeBtn" routerLink="/basel">
+            <img src="https://img.icons8.com/color/512/back--v1.png" width="30" alt="">
+        </div>
+    </div>
+
+
+    <div class="addToBase">
+
+        <div class="nickAva">
+            <img [src]="imgL" width="150" alt="">
+        </div>
+
+    <div class="text-field">
+        <div class="text">Название продукта : </div>
+        <div>
+            <input class="text-field__input" type="text" #c1 name="search" id="search" [value]="">
+        </div>
+
+    </div>
+    <div class="text-field">
+        <div class="text">Описание продукта : </div>
+
+        <div>
+            <input class="text-field__input" type="text" #c2 name="search" id="search" [value]="">
+        </div>
+
+    </div>
+    <div class="text-field">
+        <div class="text">Ссылка на картинку продукта : </div>
+        <div>
+            <input class="text-field__input" [(ngModel)]="imgL" [value]="imgL" >
+        </div>
+
+    </div>
+
+    <div class="text-field">
+        <div class="text">Цена продукта : </div>
+        <div>
+            <input class="text-field__input" type="number" #c3 name="search" id="search" [value]="">
+        </div>
+
+    </div>
+    <div class="text-field">
+        <div class="text">Наличие продукта : </div>
+        <div>
+            <div class="aviaBtn" (click)="aviaChange()" >
+                <div class="aviaTrue" *ngIf="aviaFlag">
+                    <img src="https://img.icons8.com/color-glass/512/checkmark.png" width="75" alt="">
+                </div>
+                <div class="aviaFalse" *ngIf="!aviaFlag">
+                    <img src="https://img.icons8.com/emoji/512/cross-mark-emoji.png" width="75" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="text-field">
+        <div class="text">Количество продукта : </div>
+        <div>
+            <input class="text-field__input" type="number" #c4 name="search" id="search" [value]="">
+        </div>
+
+    </div>
+
+
+    <div class="selectors">
+
+        <div class="selectCategory selEl">
+            <select class="select-css" #cs1  [(ngModel)]="cId">
+                <option>Выбрать категорию....</option>
+                <option [value]="a.id" *ngFor="let a of categories">{{a.name}}</option>
+            </select>
+        </div>
+        <div class="selectSupplier selEl">
+            <select class="select-css" #cs2 [(ngModel)]="sId">
+                <option>Выбрать поставщика....</option>
+                <option [value]="a.id" *ngFor="let a of suppliers">{{a.name}}</option>
+            </select>
+
+        </div>
+    </div>
+    
+</div>
+
+<div class="postBtnContainer" >
+    <div class="postBtn" (click)="createProduct(c1.value , c2.value , imgL,c3.value , aviaFlag , c4.value , cId , sId)" >
+        <div class="btnText">Сохранить изменения</div>
+        <div class="btnImg" ><img src="https://cdn-icons-png.flaticon.com/512/3893/3893882.png" width="30"
+                alt=""></div>
+    </div>
+</div>
+</div>
+
+
+

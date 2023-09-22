@@ -1,0 +1,82 @@
+<div class="content">
+
+    
+
+    <div class="header">
+        <div class="closeBtn" routerLink="/basel">
+            <img src="https://img.icons8.com/color/512/back--v1.png" width="30" alt="">
+        </div>
+    </div>
+   
+
+<!-- 
+    public id?: number,
+    public name?: string,
+    public desc?: string,
+    public imgLinks?:string,
+    public price?: number ,
+    public availability?:boolean,
+    public count?:number ,
+    public supplier?: Supplier,
+    public category?: Category -->
+        
+       
+    <div class="updateContainer">
+        <div class="changeName addPostEl">
+            <div class="nickAva">
+                <img [src]="product.imgLinks" width="150" alt="">
+            </div>
+            <div class="nameField elEl">
+                <div>Name :</div>
+                <div><input #name type="text" [value]="product.name"></div>
+            </div>
+            <div class="imgField elEl">
+                <div>imgLink :</div>
+                <div><input #imgLink type="text" [value]="product.imgLinks"></div>
+            </div>
+
+            <div class="elEl">
+                <div>Price :</div>
+                <div><input #price type="text" [value]="product.price"></div>
+            </div>
+        </div>
+
+        <div class="addContent addPostEl">
+            <div class="changeStatus elEl">
+
+                <div>Status :</div>
+                <div><input #status type="text" name="" [value]="product.desc" id=""></div>
+
+            </div>
+            <div class="aviability elEl">
+                <div>Наличие : </div>
+                <div class="aviaBlock">
+                    <div class="aviaBtn" (click)="aviaChange()" >
+                        <div class="aviaTrue" *ngIf="aviaFlag">
+                            <img src="https://img.icons8.com/color-glass/512/checkmark.png" width="30" alt="">
+                        </div>
+                        <div class="aviaFalse" *ngIf="!aviaFlag">
+                            <img src="https://img.icons8.com/emoji/512/cross-mark-emoji.png" width="30" alt="">
+                        </div>
+                    </div>
+         
+                </div>
+
+            </div>
+            <div class="changeCount elEl" >
+
+                <div>Count :</div>
+                <div><input #count1  type="text" name="" [value]="product.count"  id=""></div>
+
+            </div>
+        </div>
+
+        <div class="postBtnContainer" >
+            <div class="postBtn" (click)="updateInfo(product.id || 1,name.value , status.value ,imgLink.value , price.value , aviaFlag , count1.value)" >
+                <div class="btnText">Сохранить изменения</div>
+                <div class="btnImg" ><img src="https://cdn-icons-png.flaticon.com/512/3893/3893882.png" width="30"
+                        alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,169 @@
+.content {
+    margin: 75px auto;
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 50px 50px 50px 50px ;
+}
+
+.header {
+    color: aliceblue;
+}
+
+.headerEl {
+    margin: 40px auto;
+    display: flex;
+}
+
+.highHeaderEl {
+    margin-right: 50px;
+    display: flex;
+    
+}
+
+.highHeaderEl div {
+    margin: auto 5px;
+}
+
+.lowHeader{
+    margin-top: 75px;
+    justify-content: space-between;
+}
+
+.addOptions{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.addOptions div {
+    margin: auto 10px;
+}
+
+.footer {
+    color: aliceblue;
+}
+
+.text-field {
+    margin-top: -40px;
+}
+.text-field__icon {
+    position: relative;
+  }
+  .text-field__icon input {
+    padding-right: 2.5rem;
+  }
+  .text-field__aicon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0.875rem;
+    width: 1rem;
+    cursor: pointer;
+    color: #bdbdbd;
+    transition: color 0.15s ease-in-out;
+  }
+  .text-field__aicon:hover {
+    color: #212529;
+  }
+
+  .text-field__input{
+    width: 420px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px ;
+    background:transparent;
+    border: 1px solid #66FCF1;
+    color: aliceblue;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .logoText {
+    font-size: large;
+    font-family: fantasy;
+    margin-right: 15px;
+  }
+
+  .logoPic {
+    margin-top: -30px;
+  }
+
+  .addOptions{
+    margin-top: -20px;
+
+  }
+
+  .category {
+    margin-top: -20px;
+    
+
+  }
+  .category :hover {
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px ;
+    transition: .5s;
+    background-color: aliceblue;
+    
+
+  }
+
+  .category img {
+    
+
+  }
+
+
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  overflow-x: hidden;
+  padding-top: 20px;
+  
+}
+
+.sideBarContent {
+  margin-top: 20px;
+}
+
+
+.sidenavClose {
+  margin:10px 75%;
+}
+
+.sidenavClose :hover {
+  opacity: .6;
+}
+
+
+.createProduct {
+  text-align: center;
+  width: 75px;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto 550px;
+  margin-bottom: 50px;
+  margin-top: -25px;
+  border-radius: 10px 10px 10px 10px ; 
+}
+
+
+.createProduct :hover {
+  border-radius: 10px 10px 10px 10px ;
+  transition: .5s;
+  background-color: aliceblue;
+  
+
+}
+
+.createProduct:active {
+  opacity: .5;
+}

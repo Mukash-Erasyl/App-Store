@@ -1,0 +1,102 @@
+<div class="content">
+
+    
+
+    <div class="header">
+        <div class="closeBtn" routerLink="/basel">
+            <img src="https://img.icons8.com/color/512/back--v1.png" width="30" alt="">
+        </div>
+    </div>
+    
+        <div class="contentInfo conEl">
+            <div class="nameDesc">
+                {{product.name}}
+            </div>
+        </div>
+        <div class="priceStonk">
+            <div class="priceInfo">
+                <div class="priceStonkHighContent">
+                    <div class="priceBlock pEl">
+                        {{product.price}} тг
+
+                    </div>
+                    <div class="fav pEl">
+                        <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/512/external-like-instagram-flatart-icons-outline-flatarticons.png" width="20" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="basketContainer">
+                <div class="basket">
+                    <div>Добавить в корзину</div>
+                </div>
+            </div>
+               
+
+            
+            
+        </div>
+    </div>
+ 
+    <div class="mainContent ">
+        <div class="imgStonk">
+            <img [src]="product.imgLinks" alt="">
+        </div>
+        <div class="stonkInfo conEl">
+            <div class="nameStonk">
+            <h3>{{product.name}}</h3>
+
+            </div>
+            <hr>
+            <div class="stonkDesc conEl">
+                {{product.desc}}
+
+            </div>
+            <hr>
+
+
+            <div class="addInfo">
+                <h4>Дополнительная Информация</h4>
+                <div class="tableInfo">
+                    
+
+                    <tr>
+                        <td>Место производства</td>
+                        <td>{{product.supplier?.city}}</td>
+                    </tr>
+                    <tr>
+                        <td>Наличие</td>
+                        <td *ngIf="product.availability">Есть</td>
+                        <td *ngIf="!product.availability">Остутствует</td>
+                    </tr>
+                    <tr>
+                        <td>Количество товара </td>
+                        <td *ngIf="product.availability">{{product.count}}</td>
+                        <td *ngIf="!product.availability">0</td>
+                    </tr>
+                    <tr>
+                        <td>Производитель</td>
+                        <td><img [src]="product.supplier?.logoLink" width="30" alt=""></td>
+                    </tr>
+
+                 
+                    
+
+
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="footer">
+    <app-footer></app-footer>
+
+</div>
+
+
